@@ -1,0 +1,16 @@
+{
+  "name": "elahmad",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "*",
+    "axios": "*",
+    "puppeteer-core": "*",
+    "puppeteer-extra": "*",
+    "@sparticuz/chromium": "*",
+    "puppeteer-extra-plugin-stealth": "*"
+  }
+}
