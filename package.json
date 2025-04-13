@@ -1,16 +1,12 @@
 {
   "name": "elahmad",
   "version": "1.0.0",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "dev": "vercel dev"
   },
   "dependencies": {
-    "express": "*",
-    "axios": "*",
-    "puppeteer-core": "*",
-    "puppeteer-extra": "*",
-    "@sparticuz/chromium": "*",
-    "puppeteer-extra-plugin-stealth": "*"
+    "@sparticuz/chromium": "^133.0.0",
+    "puppeteer-core": "^24.2.0"
   }
 }
