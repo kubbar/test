@@ -1,5 +1,6 @@
 const chromium = require('@sparticuz/chromium');
 const puppeteer = require('puppeteer-core');
+const axios = require('axios');
 
 module.exports = async (req, res) => {
   const { channel } = req.query;
@@ -9,6 +10,7 @@ module.exports = async (req, res) => {
   }
 
   let browser = null;
+
   try {
     browser = await puppeteer.launch({
       args: chromium.args,
@@ -46,6 +48,7 @@ module.exports = async (req, res) => {
     });
 
     const streamingLink = await streamingLinkPromise;
+
     if (streamingLink) {
       res.status(200).json({ streamingLink });
     } else {
